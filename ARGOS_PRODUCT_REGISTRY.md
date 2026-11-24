@@ -27,3 +27,7 @@ See [Apple Design Interaction Principle](argos-design-system/APPLE_DESIGN_ADOPTI
 
 ## Design policy update
 **Argos v0.7:** Apple-inspired interaction principles are now standing requirements for UI reviews, not a uniform visual treatment. Read [the adoption guide](argos-design-system/APPLE_DESIGN_ADOPTION.md) and the locally pinned third-party skill where relevant. The Coffee App and Scrolling Distance App each have a [portfolio entry](projects/coffee-app.md) and [portfolio entry](projects/scrolling-distance-app.md), respectively. Their actual code is not yet connected.
+
+
+## Portfolio clarification — 24 November 2026
+The Coffee App, Scrolling Distance App, Personal Inflation Tracker and Insider Radar are planning/idea-stage projects in ChatGPT/Codex, not verified deployed applications. The approved Argos master logo is the original classical oval engraving with simple ARGOS INC wordmark, no period or underline. Colour variants are permitted; preserve the original artwork and proportions. Never substitute a geometric A. Product identities remain independent. Apple Design is a standing interaction-quality principle. The full-resolution logo asset is pending binary upload.
