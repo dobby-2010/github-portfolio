@@ -12,3 +12,7 @@ The user requested that their **Scrolling Distance App** be included under Argos
 
 ## When source is provided
 Connect the actual existing codebase, verify the intent and data model, add a project-specific `AGENTS.md`, pin the MIT `apple-design` skill with license/provenance, and validate its real scroll/gesture interactions *if* applicable. Do not fabricate user statistics or imply platform permissions without verification.
+
+
+## Portfolio clarification — 24 November 2026
+The Coffee App, Scrolling Distance App, Personal Inflation Tracker and Insider Radar are planning/idea-stage projects in ChatGPT/Codex, not verified deployed applications. The approved Argos master logo is the original classical oval engraving with simple ARGOS INC wordmark, no period or underline. Colour variants are permitted; preserve the original artwork and proportions. Never substitute a geometric A. Product identities remain independent. Apple Design is a standing interaction-quality principle. The full-resolution logo asset is pending binary upload.
