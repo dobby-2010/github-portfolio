@@ -25,3 +25,6 @@ The source-derived *rule transcriptions*, practical guidance, code-agent instruc
 The master design document is **design policy**, not a prebuilt UI kit. No feature, screenshot QA, component installation or deployed redesign follows automatically from committing documentation.
 
 Last reviewed 24 November 2026.
+
+## Apple interaction principles
+The [Apple Design adoption guide](APPLE_DESIGN_ADOPTION.md) is now a standing Argos v0.7 interaction quality reference for all products. The pinned third-party skill lives in each active repository under `.agents/skills/apple-design/SKILL.md`; it does not mandate a common visual style or unnecessary animations. See the [product registry](../ARGOS_PRODUCT_REGISTRY.md) for Coffee App and Scrolling Distance App onboarding status.
