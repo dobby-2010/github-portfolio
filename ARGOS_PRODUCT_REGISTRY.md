@@ -11,7 +11,7 @@ Last reviewed: 24 November 2026
 | Personal Inflation Tracker | Not located among connected repositories | Project idea; no source verified | Apply when implementation begins |
 | Insider Cluster-Buy Radar | Not located among connected repositories | Project idea; no source verified | Apply when implementation begins |
 | **Coffee App** | **Not located among connected repositories** | **Requested Argos member; awaiting source/spec** | **Apple Design + Argos craft required on onboarding** |
-| **Scrolling Distance App** | **Not located among connected repositories** | **Requested Argos member; awaiting source/spec** | **Apple Design + Argos craft required on onboarding** |
+| **Scrolling Distance App / Doomscroll** | [Concept & mockup](projects/doomscroll/CONCEPT.md) (app source not located) | **Argos portfolio member; documented iPhone product idea and proposed visual mockup; not built** | **Argos v0.7 + Apple Design; [concept design review](projects/doomscroll/DESIGN_REVIEW.md)** |
 
 ## Onboard the two new projects
 1. Identify the existing source/code, website or repository. Do **not** create duplicate apps by guessing.
@@ -31,3 +31,7 @@ See [Apple Design Interaction Principle](argos-design-system/APPLE_DESIGN_ADOPTI
 
 ## Portfolio clarification — 24 November 2026
 The Coffee App, Scrolling Distance App, Personal Inflation Tracker and Insider Radar are planning/idea-stage projects in ChatGPT/Codex, not verified deployed applications. The approved Argos master logo is the original classical oval engraving with simple ARGOS INC wordmark, no period or underline. Colour variants are permitted; preserve the original artwork and proportions. Never substitute a geometric A. Product identities remain independent. Apple Design is a standing interaction-quality principle. The full-resolution logo asset is pending binary upload.
+
+## Doomscroll concept update — 24 November 2026
+
+The previously registered Scrolling Distance App now has a working product name (**Doomscroll**) and a [structured concept, change log and feasibility gates](projects/doomscroll/CONCEPT.md), [iPhone mockup](projects/doomscroll/mockup.html), [research citations](projects/doomscroll/RESEARCH.md) and [82-rule / Apple Design review](projects/doomscroll/DESIGN_REVIEW.md). Its core goal is automatic cross-app, no-screen-recording scrolling activity estimates on iPhone. **Planning only**; the user's final design approval, technical viability and an app source repository are still pending. Parent engraved logo remains unmodified.
