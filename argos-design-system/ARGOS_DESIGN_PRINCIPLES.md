@@ -1,0 +1,134 @@
+# ARGOS INC — Design System & Interface Principles
+Version: 0.2 (living standard) · Updated: 2026-11-24
+
+## Purpose
+The Argos Inc umbrella covers Flynnance, Rugby Performance Analytics, Personal Inflation Tracker, Insider Cluster-Buy Radar, and the Engineering Portfolio. The classical oval engraved emblem and plain "ARGOS INC" wordmark are the parent identity. Product interfaces must be sober, useful and specific—not templated, generic "AI dashboards".
+
+This document is a design brief and quality gate, not a request to wholesale replace existing UX. Preserve functionality, accessibility, familiar patterns, mobile usability, and all financial/fitness data semantics.
+
+## A. Brand foundations
+- **Character:** classical, precise, thoughtful, engineered, analytical, restrained.
+- **Parent branding:** archival engraving, dark ink, parchment and muted bronze. Use the emblem selectively in headers, landing pages and marketing—not stamped on every card.
+- **Product UI:** readable modern sans-serif; distinctive serif reserved for logo or editorial headings. A shared component family without forcing identical screens.
+- **Starting tokens (refine with product contrast testing):** obsidian `#171C20`, parchment `#F5EBD5`, bronze `#B08A57`, slate `#64707B`, off-white `#F5F0E6`. Do not use low-contrast bronze on parchment for critical text. Define semantic color tokens for foreground/background/border/success/warning/danger.
+- **Spacing:** 4px baseline; prefer 8, 12, 16, 24, 32, 48; avoid arbitrary spacing without reason. Consistent radii, borders, chart typography, icons and interaction states.
+- **Principle:** the actual product is the hero, not glowing blobs, filler gradients, emojis, badges or marketing copy.
+
+## B. 20 foundational UX principles
+Apply as context-sensitive heuristics; accessibility and task completion outrank the named effect.
+1. **Aesthetic-usability:** polished alignment, spacing and typography support perceived quality.
+2. **Proximity:** cluster related information; separate unrelated actions.
+3. **Von Restorff:** one meaningful emphasis, not five competing accent elements.
+4. **Zeigarnik:** show meaningful pending tasks, saves and incomplete workflows.
+5. **Tesler:** handle complexity in logic so user flows stay simple.
+6. **Prägnanz:** choose the simplest comprehensible shape and arrangement.
+7. **Serial position:** lead with what matters; end flows with a useful next action.
+8. **Progressive disclosure:** advanced settings behind clear, discoverable controls.
+9. **Common region:** group elements only when a border/panel provides meaning.
+10. **Goal-gradient:** show progress on long imports, forms and training blocks.
+11. **Similarity:** same visual pattern means same action/meaning everywhere.
+12. **Recognition over recall:** visible labels, context, units and history.
+13. **Pareto:** make frequent tasks effortless before adding rare options.
+14. **Occam:** remove elements that do not help the task.
+15. **Parkinson:** short, bounded workflows; appropriate defaults.
+16. **Uniform connectedness:** visible relationships among steps, series and controls.
+17. **Active user:** make obvious paths work without reading onboarding.
+18. **Cognitive load:** avoid dense simultaneous demands; progressive detail.
+19. **Default effect:** sensible, reversible defaults.
+20. **Peak-end:** articulate success and failure states with clear, useful outcomes.
+
+## C. 10 typography techniques
+1. **Reserved bold width:** prevent shifts during active/hover/bold transitions.
+2. **Text-box trim:** optical vertical alignment where supported; safe fallback.
+3. **Underline offset:** deliberate underline position/thickness for interactive links.
+4. **Superscript spacing:** careful math/units/footnotes, never tiny unreadable text.
+5. **Fluid type:** `clamp()` at sensible mobile/desktop bounds; preserve browser zoom.
+6. **Small caps acronyms:** optional for short metadata headings; ensure legibility.
+7. **Curly quotes:** use proper punctuation in editorial text; plain quotes in code/IDs.
+8. **Middle truncation:** preserve beginning/end of paths, receipt IDs and file names, with full value available on demand.
+9. **Auto hyphenation:** editorial paragraphs only, language-aware; not ticker/metrics.
+10. **Line-clamped titles:** balanced cards; never hide safety-critical content or important chart labels.
+
+## D. 10 nuanced rendering techniques
+These are optional techniques, not mandatory decorations.
+1. **Concentric radii:** inner radius approx. outer radius minus padding for nested cards, judged visually.
+2. **Alpha borders:** faint borders for subtle grouping with tested contrast.
+3. **OKLCH palettes:** perceptually consistent shades for semantic tokens.
+4. **OKLCH gradients:** only where the composition benefits; avoid excessive saturation.
+5. **Matched icon weight:** consistent library, size and stroke across a view.
+6. **Masked edges:** subtle fades at scroll boundaries, never obscure content.
+7. **Blurred icon swaps:** only in short, purposeful, reduced-motion-aware feedback.
+8. **Dark-mode depth:** layers by gentle surface contrast, not many shadows.
+9. **Dynamic viewport:** mobile `dvh`/safe-area awareness; fallback for browsers.
+10. **Multiply blending:** considered overlays in art/marketing only, not data tables.
+
+## E. 22 possible background treatments (OPTIONAL library)
+Apply one quiet technique at a time to a designated surface, keep text contrast, offer reduced-effects fallback. No texture is compulsory.
+1 felt; 2 fluted glass; 3 thermal gradients; 4 water ripples; 5 speckled graphite; 6 single-hue landscapes; 7 blueprint grids; 8 halftone; 9 grainy gradients; 10 grass texture; 11 dithered images; 12 paper texture; 13 contour lines; 14 cloud sky; 15 pixel mosaics; 16 lens distortion; 17 stippled gradients; 18 square-dot grids; 19 blurred photos; 20 iridescent shapes; 21 impressionist paintings; 22 ASCII/pixels.
+
+**Preferred Argos applications:** paper texture for parent brand/portfolio; almost invisible blueprint or dot grid for engineering; fine speckled graphite for a dark rugby hero; faint contour lines for infographics; minimal or no texture behind finance tables/charts. Do not combine glass, grain, gradients and illustration in one panel.
+
+## F. 20 ways to remove generic "AI" design
+These are the default visual quality criteria for every PR that changes the interface.
+1. **Delete filler badges.** Only use a badge for a genuine status or classification.
+2. **Drop redundant labels.** Avoid labeling information the layout already explains.
+3. **Unitalicise random words.** Italics convey actual editorial meaning only.
+4. **Use monospace only where needed.** Code, exact identifiers and technical readings—not whole dashboards.
+5. **Use the shared design system.** No ad-hoc radii, buttons or colours.
+6. **Show the real product.** Realistic screens, actions and data flow over vague illustrations.
+7. **Enlarge the main feature.** Let the primary chart/table/action breathe.
+8. **Group with spacing.** Prefer whitespace over a border around everything.
+9. **Make headlines specific.** E.g. "Strength progression" not "Your journey".
+10. **Emphasise the CTA.** One clear primary action per view.
+11. **Add one purposeful accent colour.** Not a rainbow of gradients.
+12. **Keep icons consistent.** One icon family and matched stroke weight.
+13. **Remove embellishments.** No gratuitous sparkles, glow, glass or random decoration.
+14. **Use coherent nested radii.** Inner radius generally equals outer radius minus inset.
+15. **Improve text contrast.** Verify normal and dark modes; do not treat muted text as disabled.
+16. **Wrap headings deliberately.** Avoid orphan words and awkward single-word lines.
+17. **Align by eye, not pixels alone.** Correct optical alignment while preserving layout consistency.
+18. **Use tabular numbers.** Especially tables, money, timing, weight and KPI values.
+19. **Add honest loading states.** Skeleton/progress only when loading, no fabricated success.
+20. **Animate useful feedback.** Restrained motion for navigation, state transitions and confirmations, honour reduced-motion settings.
+
+## G. Components and accessibility
+- Semantic buttons/links; keyboard focus; labels; 44px-ish touch targets when feasible.
+- WCAG AA text contrast target, accessible charts with textual data equivalents, colour never the only encoding.
+- Primary CTA > secondary actions > metadata. Prefer a simple page title and one key action.
+- Loading, empty, success, partial-data, stale-sync and error states must be meaningful.
+- Charts: real units/time windows, meaningful axes, sources, methodology/tooltips, uncertainty where relevant.
+- Responsive: avoid horizontal overflow at 320px; respect zoom 200%, safe area and reduced motion.
+- Tests: screenshots at phone/tablet/desktop widths; headings, dark-mode contrast, no clipped tables, accessible focus, mobile navigation.
+
+## H. Example applications
+### Flynnance
+A calm investment dashboard: account value and cash flow as hero; secondary performance card; tabular numbers; compact holdings list; only risk alerts get badges. Avoid fake trading terminal visuals, shiny glass cards or six gradient KPIs.
+
+### Rugby Performance Analytics
+Start with readiness, next gym session or today's field plan; one obvious "Log session" CTA; clear progression by exercise, date, sets, reps, load, estimated 1RM and volume; dark graphite hero is optional, charts stay readable.
+
+### Personal Inflation Tracker
+Hero: personal matched-item price index; receipts-import status with clear source and timestamp; price comparison table by quantity/unit; filter by Woolworths/Coles; do not confuse expenditure with inflation.
+
+### Insider Cluster-Buy Radar
+Show verified filing sources, buyer count, transaction dates and price; cluster scoring with method and caveats; quick filters; no sensational predictions or green/red-only encoding.
+
+### Engineering Portfolio
+The authentic Argos Inc oval emblem, readable typographic hero and direct project evidence; editorial paper/grain only in selected sections; no filler slogan clouds, randomly glowing cubes or fake metrics.
+
+## I. Implementation and review checklist
+- [ ] User goal and primary action clear within 5 seconds.
+- [ ] Existing functionality, data accuracy and context preserved.
+- [ ] No filler chips/badges/gradients, random italics or generic slogans.
+- [ ] One deliberate accent; balanced visual hierarchy and typography.
+- [ ] Consistent radius/spacing/icons; headline wraps checked.
+- [ ] Tabular numbers, precise units, accessible contrast.
+- [ ] States: loading, empty, error, success and stale data.
+- [ ] Responsive, keyboard, reduced motion and accessible charts.
+- [ ] Product-specific example used rather than decorative placeholder.
+- [ ] Screenshot comparisons before/after; no change made solely to look novel.
+
+## J. Governance
+This is a **living standard**. New screenshots and ideas are added as versioned candidates; each idea is either a default, a contextual technique or explicitly rejected for a particular product. New patterns should be validated with actual tasks and screen captures. Code changes must not be implied by documentation alone.
+
+**Brand asset:** master ARGOS INC oval classical engraving with parchment ground and plain serif wordmark; no underline or terminal period. Do not recreate the image with generic AI imagery in existing apps. Use an approved source asset.
