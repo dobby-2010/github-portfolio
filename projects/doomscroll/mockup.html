@@ -66,7 +66,7 @@
 <div class="island" aria-hidden="true"></div><div class="phone-inner">
 <div class="status"><span>9:41</span><span class="status-symbols" aria-label="Illustrative signal, Wi-Fi and battery">▮▮▮ ◕ ▰</span></div>
 <main class="content">
-<section id="today" class="view" aria-label="Today" tabindex="-1">
+<section id="today" class="view" role="tabpanel" aria-labelledby="tab-today" tabindex="-1">
 <div class="logo">doomscroll<b>.</b></div>
 <p class="today-date">Tuesday, 24 November</p>
 <h1 class="display">330m</h1>
@@ -89,14 +89,14 @@
 <button class="linklike" type="button" data-go="sessions">See your sessions →</button>
 <p class="note-small">Estimated from selected-app usage. The example data shown here is fictional. Individual swipes are not measured.</p>
 </section>
-<section id="sessions" class="view" aria-label="Sessions" tabindex="-1" hidden>
+<section id="sessions" class="view" role="tabpanel" aria-labelledby="tab-sessions" tabindex="-1" hidden>
 <h1 class="heading">Your sessions</h1><p class="sub">Reconstructed from app activity · sample data</p>
 <article class="session"><div class="session-header"><div><div class="session-name">Evening scroll</div><div class="session-time">8:42–8:57 pm · 15 min</div></div><span aria-hidden="true">↗</span></div><div class="session-distance">86m <span>estimated</span></div><div class="bar"></div><div class="route"><span>Instagram</span><span>→</span><span>TikTok</span></div></article>
 <article class="session"><div class="session-header"><div><div class="session-name">Lunch break</div><div class="session-time">12:20–12:41 pm · 21 min</div></div><span aria-hidden="true">↗</span></div><div class="session-distance">132m <span>estimated</span></div><div class="bar b"></div><div class="route"><span>Instagram</span><span>→</span><span>TikTok</span></div></article>
 <article class="session"><div class="session-header"><div><div class="session-name">Morning scroll</div><div class="session-time">7:31–7:51 am · 20 min</div></div><span aria-hidden="true">↗</span></div><div class="session-distance">112m <span>estimated</span></div><div class="bar c"></div><div class="route"><span>TikTok</span><span>→</span><span>Reddit</span></div></article>
 <p class="note-small">Session start/end times and per-app splits depend on iOS permissions and have not been verified. This screen illustrates the desired experience only.</p>
 </section>
-<section id="explore" class="view" aria-label="Explore comparisons" tabindex="-1" hidden>
+<section id="explore" class="view" role="tabpanel" aria-labelledby="tab-explore" tabindex="-1" hidden>
 <h1 class="heading">Put it in perspective.</h1><p class="sub">Today's 330 metres, expressed a different way.</p>
 <div class="explore-card">
 <svg class="explore-svg" viewBox="0 0 115 168" role="img" aria-label="Line drawing of Eiffel Tower">
@@ -111,10 +111,10 @@
 <p id="copy-status" class="note-small" role="status" aria-live="polite">A comparison of estimated scrolling distance, not a measured count.</p>
 </section>
 </main>
-<nav class="nav" aria-label="App sections">
-<button type="button" class="tab" data-tab="today" aria-selected="true" aria-controls="today"><svg viewBox="0 0 24 24"><path d="m3 11 9-8 9 8v10h-7v-7h-4v7H3z"/></svg><span>Today</span></button>
-<button type="button" class="tab" data-tab="sessions" aria-selected="false" aria-controls="sessions"><svg viewBox="0 0 24 24"><path d="M4 20V11M10 20V6M16 20V14M22 20V3"/></svg><span>Sessions</span></button>
-<button type="button" class="tab" data-tab="explore" aria-selected="false" aria-controls="explore"><svg viewBox="0 0 24 24"><path d="m3 7 9-4 9 4-9 4zM3 12l9 4 9-4M3 17l9 4 9-4"/></svg><span>Explore</span></button>
+<nav class="nav" role="tablist" aria-label="App sections">
+<button type="button" class="tab" id="tab-today" role="tab" data-tab="today" aria-selected="true" aria-controls="today"><svg viewBox="0 0 24 24"><path d="m3 11 9-8 9 8v10h-7v-7h-4v7H3z"/></svg><span>Today</span></button>
+<button type="button" class="tab" id="tab-sessions" role="tab" data-tab="sessions" aria-selected="false" aria-controls="sessions"><svg viewBox="0 0 24 24"><path d="M4 20V11M10 20V6M16 20V14M22 20V3"/></svg><span>Sessions</span></button>
+<button type="button" class="tab" id="tab-explore" role="tab" data-tab="explore" aria-selected="false" aria-controls="explore"><svg viewBox="0 0 24 24"><path d="m3 7 9-4 9 4-9 4zM3 12l9 4 9-4M3 17l9 4 9-4"/></svg><span>Explore</span></button>
 </nav><div class="home-indicator" aria-hidden="true"></div>
 </div></div>
 <p class="notice">Fictional sample data. Visual design mockup only; no tracking, screen recording, or iOS permissions implemented.</p>
@@ -123,7 +123,7 @@
 (function(){
 const views=[...document.querySelectorAll('.view')],tabs=[...document.querySelectorAll('[data-tab]')];
 function show(id){views.forEach(v=>v.hidden=v.id!==id);tabs.forEach(t=>t.setAttribute('aria-selected',String(t.dataset.tab===id)));const view=document.getElementById(id);if(view)view.focus({preventScroll:true});}
-tabs.forEach(t=>t.addEventListener('click',()=>show(t.dataset.tab)));
+tabs.forEach((t,i)=>{t.addEventListener('click',()=>show(t.dataset.tab));t.addEventListener('keydown',e=>{let next=-1;if(e.key==='ArrowRight')next=(i+1)%tabs.length;if(e.key==='ArrowLeft')next=(i-1+tabs.length)%tabs.length;if(e.key==='Home')next=0;if(e.key==='End')next=tabs.length-1;if(next>=0){e.preventDefault();tabs[next].focus();show(tabs[next].dataset.tab)}})});
 document.querySelector('[data-go="sessions"]').addEventListener('click',()=>show('sessions'));
 document.getElementById('share').addEventListener('click',async()=>{const t="I scrolled an estimated 330 metres today — about the height of the Eiffel Tower. (Doomscroll concept)";try{await navigator.clipboard.writeText(t);document.getElementById('copy-status').textContent='Comparison text copied.'}catch{document.getElementById('copy-status').textContent=t}});
 })();
