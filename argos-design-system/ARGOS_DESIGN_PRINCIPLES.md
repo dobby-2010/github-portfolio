@@ -1,5 +1,5 @@
 # ARGOS INC — Design System & Interface Principles
-Version: 0.6 (living standard) · Updated: 2026-11-24
+Version: 0.7 (living standard) · Updated: 2026-11-24
 
 ## Purpose
 The Argos Inc umbrella covers Flynnance, Rugby Performance Analytics, Personal Inflation Tracker, Insider Cluster-Buy Radar, and the Engineering Portfolio. The classical oval engraved emblem and plain "ARGOS INC" wordmark are the parent identity. Product interfaces must be sober, useful and specific—not templated, generic "AI dashboards".
@@ -197,3 +197,10 @@ The principles supplement Argos UI craftsmanship. They **do not** mean every pro
 **Workflow trigger:** For gesture, animation, sheet/drawer, touch, popover, typography-motion or material design tasks, Codex should first read the pinned skill. Do not automatically install motion libraries or alter existing UX just because the skill exists. For data tables and static reports, ordinary Argos hierarchy and alignment guidance usually take priority.
 
 **Source provenance:** This is a third-party adaptation of Apple's published design ideas; the skill is not an official Apple-issued specification.
+
+## N. Apple Design is now a standing Argos interaction principle (v0.7)
+**Permanent policy:** The Argos Inc portfolio adopts the interaction craftsmanship of [Emil Kowalski's Apple Design skill](https://github.com/emilkowalski/skills/tree/main/skills/apple-design) as a required *review lens* for all future UI work, not merely an occasional optional reference. Consult the locally pinned skill under `.agents/skills/apple-design/SKILL.md` for the full techniques and licence.
+
+At every UI review, evaluate responsiveness, agency, spatial consistency, truthful feedback, motion/reduced motion, typography, accessible controls and thoughtful material depth. For genuine drag/swipe/sheet interfaces, implement instant press feedback, continuous tracking, grab-offset preservation, interruption/reversal, velocity hand-off and momentum-based snap where appropriate. **Do not impose motion on static dashboards** or style all apps to look like Apple. A technique that offers no user value is intentionally omitted; that exception is faithful to the skill's restraint and simplicity principles.
+
+Use the [Apple Design adoption guide](https://github.com/dobby-2010/github-portfolio/blob/main/argos-design-system/APPLE_DESIGN_ADOPTION.md) for task-specific criteria, and the [Argos product registry](https://github.com/dobby-2010/github-portfolio/blob/main/ARGOS_PRODUCT_REGISTRY.md) for existing and upcoming apps. This parent standard is binding for UI quality, while each product's brand, visuals, name and data remain independent. Coffee App and Scrolling Distance App are registered as Argos umbrella projects but no source repositories have been confirmed for them yet.
