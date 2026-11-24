@@ -1,5 +1,5 @@
 # ARGOS INC — Design System & Interface Principles
-Version: 0.5 (living standard) · Updated: 2026-11-24
+Version: 0.6 (living standard) · Updated: 2026-11-24
 
 ## Purpose
 The Argos Inc umbrella covers Flynnance, Rugby Performance Analytics, Personal Inflation Tracker, Insider Cluster-Buy Radar, and the Engineering Portfolio. The classical oval engraved emblem and plain "ARGOS INC" wordmark are the parent identity. Product interfaces must be sober, useful and specific—not templated, generic "AI dashboards".
@@ -176,3 +176,24 @@ The original 82 labels (20 UX + 10 typography + 10 visual + 22 background + 20 a
 The separate [Nine Design Tool References](https://github.com/dobby-2010/github-portfolio/blob/main/argos-design-system/DESIGN_TOOL_REFERENCES.md) preserves the user screenshot's nine site links. Using these references does **not** mean third-party software is installed or current UIs implement the design rules.
 
 **Authority and exceptions:** Each product keeps its own name, colours and flavour. Design QA should prioritise spacing, hierarchy, type metrics, accurate data, icons, functional feedback, accessibility and meaningful micro-interactions—not forcing the Argos colour palette or a texture. The approved master logo artwork is not yet committed as a binary asset, though its no-period/no-underline requirement is documented.
+
+
+## M. Apple-inspired interaction craft (optional, pinned third-party skill)
+See [Emil Kowalski's `apple-design` skill](https://github.com/emilkowalski/skills/tree/main/skills/apple-design), installed in each active repository at `.agents/skills/apple-design/SKILL.md` with its MIT licence and upstream provenance.
+
+The principles supplement Argos UI craftsmanship. They **do not** mean every product must look like Apple, add glass effects, adopt Apple's palette, or animate everything. Every product preserves its own identity and accessibility standards.
+
+- **Response:** give immediate press/touch-down feedback, while only committing actions on actual activation.
+- **Direct manipulation:** drag and swipe surfaces track the pointer continuously, honouring the original grab offset.
+- **Interruptibility:** gesture-driven motion can be grabbed, cancelled or reversed from the current rendered state; no waiting for a cosmetic animation to finish.
+- **Momentum:** carry velocity into a spring/snap only for genuinely physical gestures; use restrained, critically damped motion for ordinary UI.
+- **Spatial continuity:** transitions return along their entry paths; menus originate from the triggering control.
+- **Wayfinding and agency:** always provide visible navigation, easy escape, undo where possible, and familiar interaction patterns.
+- **Typography craft:** size-aware tracking and leading, optical hierarchy, and layouts that adapt when users increase text size.
+- **Depth only when useful:** overlays and translucency communicate layering, not aesthetics alone; avoid stacked glass and low contrast.
+- **Accessibility:** respect reduced motion/transparency and increased contrast, with keyboard and non-gesture alternatives.
+- **Prototype and test:** evaluate real interactions with real data, not solely still mockups. Capture frame drops, interruptions, focus and touch behaviour.
+
+**Workflow trigger:** For gesture, animation, sheet/drawer, touch, popover, typography-motion or material design tasks, Codex should first read the pinned skill. Do not automatically install motion libraries or alter existing UX just because the skill exists. For data tables and static reports, ordinary Argos hierarchy and alignment guidance usually take priority.
+
+**Source provenance:** This is a third-party adaptation of Apple's published design ideas; the skill is not an official Apple-issued specification.
