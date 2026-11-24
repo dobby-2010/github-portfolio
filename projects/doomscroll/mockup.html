@@ -122,9 +122,9 @@
 <script>
 (function(){
 const views=[...document.querySelectorAll('.view')],tabs=[...document.querySelectorAll('[data-tab]')];
-function show(id){views.forEach(v=>v.hidden=v.id!==id);tabs.forEach(t=>t.setAttribute('aria-selected',String(t.dataset.tab===id)));const view=document.getElementById(id);if(view)view.focus({preventScroll:true});}
+function show(id,focusPanel=false){views.forEach(v=>v.hidden=v.id!==id);tabs.forEach(t=>t.setAttribute('aria-selected',String(t.dataset.tab===id)));const view=document.getElementById(id);if(focusPanel&&view)view.focus({preventScroll:true});}
 tabs.forEach((t,i)=>{t.addEventListener('click',()=>show(t.dataset.tab));t.addEventListener('keydown',e=>{let next=-1;if(e.key==='ArrowRight')next=(i+1)%tabs.length;if(e.key==='ArrowLeft')next=(i-1+tabs.length)%tabs.length;if(e.key==='Home')next=0;if(e.key==='End')next=tabs.length-1;if(next>=0){e.preventDefault();tabs[next].focus();show(tabs[next].dataset.tab)}})});
-document.querySelector('[data-go="sessions"]').addEventListener('click',()=>show('sessions'));
+document.querySelector('[data-go="sessions"]').addEventListener('click',()=>show('sessions',true));
 document.getElementById('share').addEventListener('click',async()=>{const t="I scrolled an estimated 330 metres today — about the height of the Eiffel Tower. (Doomscroll concept)";try{await navigator.clipboard.writeText(t);document.getElementById('copy-status').textContent='Comparison text copied.'}catch{document.getElementById('copy-status').textContent=t}});
 })();
 </script>
