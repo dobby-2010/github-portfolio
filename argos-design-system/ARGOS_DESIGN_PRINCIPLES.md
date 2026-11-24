@@ -1,5 +1,5 @@
 # ARGOS INC — Design System & Interface Principles
-Version: 0.2 (living standard) · Updated: 2026-11-24
+Version: 0.4 (living standard) · Updated: 2026-11-24
 
 ## Purpose
 The Argos Inc umbrella covers Flynnance, Rugby Performance Analytics, Personal Inflation Tracker, Insider Cluster-Buy Radar, and the Engineering Portfolio. The classical oval engraved emblem and plain "ARGOS INC" wordmark are the parent identity. Product interfaces must be sober, useful and specific—not templated, generic "AI dashboards".
@@ -10,7 +10,7 @@ This document is a design brief and quality gate, not a request to wholesale rep
 - **Character:** classical, precise, thoughtful, engineered, analytical, restrained.
 - **Parent branding:** archival engraving, dark ink, parchment and muted bronze. Use the emblem selectively in headers, landing pages and marketing—not stamped on every card.
 - **Product UI:** readable modern sans-serif; distinctive serif reserved for logo or editorial headings. A shared component family without forcing identical screens.
-- **Starting tokens (refine with product contrast testing):** obsidian `#171C20`, parchment `#F5EBD5`, bronze `#B08A57`, slate `#64707B`, off-white `#F5F0E6`. Do not use low-contrast bronze on parchment for critical text. Define semantic color tokens for foreground/background/border/success/warning/danger.
+- **Colour is product-owned, not shared branding enforcement:** historical Argos palette references are optional inspiration, not requirements. Each app defines its own contrast-tested semantic colour tokens.
 - **Spacing:** 4px baseline; prefer 8, 12, 16, 24, 32, 48; avoid arbitrary spacing without reason. Consistent radii, borders, chart typography, icons and interaction states.
 - **Principle:** the actual product is the hero, not glowing blobs, filler gradients, emojis, badges or marketing copy.
 
@@ -132,3 +132,40 @@ The authentic Argos Inc oval emblem, readable typographic hero and direct projec
 This is a **living standard**. New screenshots and ideas are added as versioned candidates; each idea is either a default, a contextual technique or explicitly rejected for a particular product. New patterns should be validated with actual tasks and screen captures. Code changes must not be implied by documentation alone.
 
 **Brand asset:** master ARGOS INC oval classical engraving with parchment ground and plain serif wordmark; no underline or terminal period. Do not recreate the image with generic AI imagery in existing apps. Use an approved source asset.
+
+## K. Non-negotiable professional UI craft (colour-agnostic)
+**Argos Inc is the portfolio/parent umbrella, not a uniform product skin.** Flynnance is called **Flynnance**, Rugby Performance Analytics is its own product, and each future app has its own name, visual personality, typography choices, colour system and information architecture. The *rules of craftsmanship* are shared. Do not relabel a Flynnance page "Argos" or forcibly import the Argos emblem, parchment or bronze into its dashboard.
+
+Apply these details to the actual interface, regardless of visual theme:
+
+1. **Visual hierarchy first:** one obvious page purpose, useful title and primary action. Secondary controls recede.
+2. **Optical alignment:** align baselines, icons and numerals visually as well as on the grid; inspect at real device sizes.
+3. **Deliberate spacing:** use consistent spacing steps, but choose spacing to convey relationships rather than wrapping every section in a card.
+4. **Concentric radii:** when surfaces are nested, tune inner radius to the surrounding inset (often outer radius minus padding).
+5. **Quiet borders:** use subtle boundaries only when they clarify structure. Avoid double-border stacks and needless card outlines.
+6. **Text-box fit and rhythm:** control heading line-height, paragraph measure, baseline spacing and top/bottom trim without clipping.
+7. **Stable type states:** reserve widths for bold/selected labels, counts and dynamic headings so interaction does not cause layout shifts.
+8. **Numeric precision:** use tabular figures for currency, measurements, timings and comparisons; line up decimals and units.
+9. **Link details:** accessible underline offset and thickness, focus/hover/visited styles that don't jump around.
+10. **Meaningful truncation:** use line clamping for preview copy only; preserve full detail via expansion. Middle-truncate long IDs/paths where both ends matter.
+11. **Intentional heading wraps:** edit labels or widths to avoid single-word orphans. Don't force identical title lengths at the cost of clarity.
+12. **Consistent icon treatment:** one icon family, matching apparent weight, stroke and optical size; labels where icons are ambiguous.
+13. **Thoughtful empty/loading/error states:** useful content, honest loading, actionable errors, no fake completions.
+14. **Purposeful motion only:** subtle transitions that communicate state/continuity; honour reduced motion. No hover animation just to look lively.
+15. **Correct responsive behaviour:** no clipped table values or horizontal screen scrolling at mobile width, sensible sticky elements, keyboard and safe-area handling.
+16. **Data integrity:** charts must carry accurate units, timeframes and sources; never visually imply precision the data doesn't have.
+17. **Disciplined emphasis:** use weight/size/position first; selective accent when needed, not arbitrary rainbow colours.
+18. **Reduce AI tells:** remove sparkles, filler badges, repeated subtitles, meaningless hero slogans, random italics, visual embellishments and decorative icons.
+19. **One coherent interaction grammar:** buttons, filters, tabs, menus and confirmation patterns consistent within and across each product without identical look-and-feel.
+20. **Review actual screenshots:** inspect realistic content and long/short values; compare before and after for task clarity, visual polish and accessibility—not whether it looks more decorated.
+
+### Review acceptance test (for every UI pull request)
+- Can the user locate the main information and primary action in a few seconds?
+- Are related items grouped by spacing rather than card proliferation?
+- Do type, numerals, units, icons, borders, radii and interactive states feel intentional at 320px, tablet and desktop widths?
+- Do long names/large numbers, loading, zero data and errors render correctly?
+- Is the feature easier to use while retaining the product's distinct identity?
+- Have aesthetic decisions been validated with screenshots and accessibility checks?
+
+**Colour and background policy:** No universal colour palette, compulsory texture, font, accent, shadow or theme applies to all Argos Inc products. Earlier palette/background examples are an optional *inspiration library*, not coding requirements. Each product owns its tokens. Textures (paper, grid, contour, grain, etc.) are available only when they serve the product and do not impair readability.
+
