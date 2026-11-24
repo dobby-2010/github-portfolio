@@ -11,3 +11,6 @@ Argos Inc is a parent portfolio; this repository must retain its own product ide
 
 ### Implementation resources
 Before any portfolio UI changes, read `argos-design-system/UI_IMPLEMENTATION_PLAYBOOK.md`, `argos-design-system/UI_QUALITY_CHECKLIST.md`, `argos-design-system/SCREENSHOT_SOURCE_AUDIT.md` and `argos-design-system/DESIGN_TOOL_REFERENCES.md`. Follow existing product style and do not assume screenshots are implemented merely because documentation exists.
+
+## Apple-inspired interaction guidance
+The repository includes `.agents/skills/apple-design/SKILL.md` (Emil Kowalski, MIT; see adjacent license and upstream attribution). Before changing gesture-driven interfaces, touch feedback, sheets, drawers, popovers, animation, motion-sensitive typography or layered materials, read that skill and apply it selectively. Prefer instant response, interruptible motion, spatial consistency, meaningful feedback, reduced-motion accessibility, and user control. **Do not** force Apple visual styling, glass, a common theme, extra motion or new dependencies onto this product. Its independent identity and existing workflows remain authoritative. For static dashboards and data tables, use ordinary Argos UI quality standards first.
