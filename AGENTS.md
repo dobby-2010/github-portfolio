@@ -1,0 +1,8 @@
+# Argos Inc portfolio and design-agent guidance
+For all user-interface work in this repository, use `argos-design-system/ARGOS_DESIGN_PRINCIPLES.md` as the Argos master design standard.
+
+The Argos Inc parent identity is the approved oval engraved emblem and plain serif "ARGOS INC" wordmark (no period, no underline). The portfolio should show real engineering projects, diagrams and proof, not generic AI graphic motifs.
+
+Apply the 20 anti-generic rules: no filler badges, unnecessary labels, random italics, decorative glows, or placeholder metrics. Use strong whitespace grouping, accurate typography and meaningful primary CTAs. Check all accessibility, responsive, loading, error and success criteria in the master standard.
+
+Never include financial records, private rugby/fitness health data or credentials in this public repo. Do not claim mockups are actual data or working features.
