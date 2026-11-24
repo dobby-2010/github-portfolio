@@ -12,7 +12,7 @@ Argos Inc is the umbrella—not a universal design skin. Each project keeps its 
 | **Rugby Performance Analytics** | Training, recovery and performance analytics application; private source repository | [GitHub](https://github.com/dobby-2010/rugby-performance-analytics) |
 | **Engineering portfolio** | Engineering projects and shared design system | [Project source](https://github.com/dobby-2010/github-portfolio) |
 | **Coffee App** | Added to Argos umbrella; source and feature details not yet linked | [Project entry](projects/coffee-app.md) |
-| **Scrolling Distance App** | Added to Argos umbrella; source and feature details not yet linked | [Project entry](projects/scrolling-distance-app.md) |
+| **Scrolling Distance App / Doomscroll** | iPhone-first cross-app activity-distance concept; prototype and research documented, **not yet built** | [Portfolio entry](projects/scrolling-distance-app.md) · [Concept](projects/doomscroll/CONCEPT.md) · [Mockup](projects/doomscroll/mockup.html) |
 | **Personal Inflation Tracker** | Planned project | [Registry](ARGOS_PRODUCT_REGISTRY.md) |
 | **Insider Cluster-Buy Radar** | Planned project | [Registry](ARGOS_PRODUCT_REGISTRY.md) |
 
