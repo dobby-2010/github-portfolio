@@ -5,9 +5,9 @@ Last reviewed: 24 November 2026
 
 | Product | Source repository | Current status | Shared design standard |
 |---|---|---|---|
-| Flynnance | [Private repository](https://github.com/dobby-2010/flynnance) | Existing app; Codex guidance committed | Argos v0.6, Apple Design skill |
-| Rugby Performance Analytics | [Private repository](https://github.com/dobby-2010/rugby-performance-analytics) | Existing app; Codex guidance committed | Argos v0.6, Apple Design skill |
-| Engineering / Argos portfolio | [Public repository](https://github.com/dobby-2010/github-portfolio) | Design-system documents and portfolio planning; live portfolio site not verified | Argos v0.6, Apple Design skill |
+| Flynnance | [Private repository](https://github.com/dobby-2010/flynnance) | Existing app; Codex guidance committed | Argos v0.7, Apple Design skill |
+| Rugby Performance Analytics | [Private repository](https://github.com/dobby-2010/rugby-performance-analytics) | Existing app; Codex guidance committed | Argos v0.7, Apple Design skill |
+| Engineering / Argos portfolio | [Public repository](https://github.com/dobby-2010/github-portfolio) | Design-system documents and portfolio planning; live portfolio site not verified | Argos v0.7, Apple Design skill |
 | Personal Inflation Tracker | Not located among connected repositories | Project idea; no source verified | Apply when implementation begins |
 | Insider Cluster-Buy Radar | Not located among connected repositories | Project idea; no source verified | Apply when implementation begins |
 | **Coffee App** | **Not located among connected repositories** | **Requested Argos member; awaiting source/spec** | **Apple Design + Argos craft required on onboarding** |
@@ -24,3 +24,6 @@ Last reviewed: 24 November 2026
 See [Apple Design Interaction Principle](argos-design-system/APPLE_DESIGN_ADOPTION.md), plus [Argos master design rules](argos-design-system/ARGOS_DESIGN_PRINCIPLES.md).
 
 **Implementation status is explicit:** a listing here does not mean an app has been built, transferred, deployed, or redesigned.
+
+## Design policy update
+**Argos v0.7:** Apple-inspired interaction principles are now standing requirements for UI reviews, not a uniform visual treatment. Read [the adoption guide](argos-design-system/APPLE_DESIGN_ADOPTION.md) and the locally pinned third-party skill where relevant. The Coffee App and Scrolling Distance App each have a [portfolio entry](projects/coffee-app.md) and [portfolio entry](projects/scrolling-distance-app.md), respectively. Their actual code is not yet connected.
