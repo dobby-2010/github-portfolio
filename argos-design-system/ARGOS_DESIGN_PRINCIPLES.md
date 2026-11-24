@@ -1,5 +1,5 @@
 # ARGOS INC — Design System & Interface Principles
-Version: 0.4 (living standard) · Updated: 2026-11-24
+Version: 0.5 (living standard) · Updated: 2026-11-24
 
 ## Purpose
 The Argos Inc umbrella covers Flynnance, Rugby Performance Analytics, Personal Inflation Tracker, Insider Cluster-Buy Radar, and the Engineering Portfolio. The classical oval engraved emblem and plain "ARGOS INC" wordmark are the parent identity. Product interfaces must be sober, useful and specific—not templated, generic "AI dashboards".
@@ -169,3 +169,10 @@ Apply these details to the actual interface, regardless of visual theme:
 
 **Colour and background policy:** No universal colour palette, compulsory texture, font, accent, shadow or theme applies to all Argos Inc products. Earlier palette/background examples are an optional *inspiration library*, not coding requirements. Each product owns its tokens. Textures (paper, grid, contour, grain, etc.) are available only when they serve the product and do not impair readability.
 
+
+## L. Screenshot fidelity & provenance (v0.5)
+The original 82 labels (20 UX + 10 typography + 10 visual + 22 background + 20 anti-generic) are now preserved **verbatim and in source order** in the [Argos Screenshot Source Audit](https://github.com/dobby-2010/github-portfolio/blob/main/argos-design-system/SCREENSHOT_SOURCE_AUDIT.md). Read that inventory when verifying or interpreting an uploaded screenshot; sections B–K remain practical, colour-agnostic implementation guidance rather than exact transcriptions.
+
+The separate [Nine Design Tool References](https://github.com/dobby-2010/github-portfolio/blob/main/argos-design-system/DESIGN_TOOL_REFERENCES.md) preserves the user screenshot's nine site links. Using these references does **not** mean third-party software is installed or current UIs implement the design rules.
+
+**Authority and exceptions:** Each product keeps its own name, colours and flavour. Design QA should prioritise spacing, hierarchy, type metrics, accurate data, icons, functional feedback, accessibility and meaningful micro-interactions—not forcing the Argos colour palette or a texture. The approved master logo artwork is not yet committed as a binary asset, though its no-period/no-underline requirement is documented.
