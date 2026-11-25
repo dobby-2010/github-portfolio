@@ -208,3 +208,30 @@ Use the [Apple Design adoption guide](https://github.com/dobby-2010/github-portf
 
 ## Portfolio clarification — 24 November 2026
 The Coffee App, Scrolling Distance App, Personal Inflation Tracker and Insider Radar are planning/idea-stage projects in ChatGPT/Codex, not verified deployed applications. The approved Argos master logo is the original classical oval engraving with simple ARGOS INC wordmark, no period or underline. Colour variants are permitted; preserve the original artwork and proportions. Never substitute a geometric A. Product identities remain independent. Apple Design is a standing interaction-quality principle. The full-resolution logo asset is pending binary upload.
+
+
+## O. 20 Practical Design Tips — source addition (2026-11-25)
+Source: user screenshot, 8FC0734F-DED7-42A7-80FF-47C046EEB312.jpeg, “20 Practical Design Tips”, charles.unemployed.
+Original labels, in order:
+1. Left-align long text
+2. Text fills half the button
+3. Keep body text regular
+4. Tint your grays blue
+5. Keep Delete far from Save
+6. Tight headline line height
+7. Layer your shadows
+8. Use sentence case
+9. Tint text on color
+10. Align on the baseline
+11. Labels, not placeholders
+12. One hue per color
+13. More padding on the sides
+14. Say what buttons do
+15. More space above headings
+16. Mute colors in dark mode
+17. Right-align numbers
+18. Gap = small text's height
+19. Add a CTA to empty states
+20. Bigger landing page CTAs
+
+Implementation: left-align long LTR prose; use regular body weight, sentence case, baseline alignment, persistent form labels, descriptive action labels, separated destructive actions, right-aligned comparable numeric table cells with tabular figures, and actionable empty states when an action exists. Use tighter headline leading without clipping, greater spacing above headings than below, and generous horizontal control padding. Treat half-button text width and small-text-height gaps as optical starting points, not rigid formulas; accommodate localization, zoom and touch targets. Layer shadows only for useful depth. Blue-tinted grays, coherent hues, tinted foregrounds and muted dark-mode colors are optional product-specific techniques, subject to contrast and existing identity; no common palette. Larger landing-page CTAs apply to primary actions, not every dashboard control. These qualifications are Argos interpretations, not source wording. Source inventory now 102 entries across six sets, not 102 unique mandatory rules. Apple Design standing principle and original logo protection remain unchanged.
